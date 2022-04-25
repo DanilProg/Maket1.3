@@ -11,6 +11,9 @@
 li{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
 .container {
     max-width: 1120px;
     margin: 0 auto;
@@ -123,7 +126,10 @@ li:last-of-type .header__btn{
     overflow: auto;
 
 }
-
+.intro__link-decoration{
+    font-size: 16px;
+    color: #7E7E82;
+}
 .intro__link{
     list-style-type: none;
     font-size: 16px;
