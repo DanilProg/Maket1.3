@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    font-family: "TTLakes-DemiBold", sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "TTLakes-DemiBold";
+    src: url("../fonts/TTLakes-DemiBold.woff");
+}
+@font-face {
+    font-family: "limon";
+    src: url("../fonts/TTLakes-ExtraBold.woff");
+}
+body {
+    background: #F2F2F2;
+}
+
+.burger {
+    max-width: 320px;
+    background: #FFFFFF;
+    box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05;
+
+}
+
+.header-burger__inner {
+    display: flex;
+    padding: 18px 24px 46px 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-burger__menu {
+    display: flex;
+    align-items: center;
+}
+
+.close-btn {
+    margin-right: 16px;
+}
+.main-burger {
+    padding-left: 24px;
+}
+
+.main-burger__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-burger__link {
+    color: #1B1C21;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.main-burger__link.active {
+    color: #7E7E82;
+}
+.main-burger__nav a:focus{
+    color: #7E7E82;
+}
+.main-burger__link.active:before{
+    content: "";
+    position: absolute;
+    left: -24px;
+    top:-3px;
+    background: #41F6D7;
+    border-radius: 25px;
+    width: 4px;
+    height: 32px;
+}
+.footer-burger {
+    padding: 268px 0 32px 24px;
+}
+
+.footer-burger__nav {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.footer-burger pre {
+    font-size: 20px;
+    padding: 12px 0 40px 0;
+    color: #1B1C21;
+    font-family: "limon";
+}
+
+.footer-burger p {
+    color: #1B1C21;
+    font-size: 14px;
+}
+
+.footer-burger__btn {
+    margin-right: 16px;
+}
+
+.btn:hover {
+    transition: 0.6s;
+    opacity: 0.6;
+}
+
+.btn {
+    transition: 1s;
+}
+.footer-burger__lang{
+    display: flex;
+}
+.footer-burger__lang button:first-child{
+    color:#7E7E82;
+}
+.footer-burger__lang button{
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding:0 8px 0 0;
+}
+@media screen and (min-width: 1430px) and (max-width: 1440px) {
+    .header-burger__menu > .btn{
+        display: none;
+    }
+}
