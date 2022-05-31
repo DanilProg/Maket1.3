@@ -1,15 +1,18 @@
 const slider = document.querySelectorAll('.swiper')
 const content = document.querySelectorAll('.hidden')
 const contentVis = document.querySelectorAll('.visibl')
-const btn = document.querySelector("#btn")
+const service = document.querySelector('.service-hide__btn')
+const click = document.querySelector('.service-hide')
 
-btn.addEventListener("click", () => {
+service.addEventListener("click", () => {
     for(let i = 0; i < content.length; i++){
         content[i].classList.toggle('hidden')
-        if(btn.value === 'Показать все'){
-            btn.value = "Скрыть"
+        if(service.value === 'Показать все'){
+            click.classList.add('click')
+            service.value = "Скрыть"
         }else{
-            btn.value = 'Показать все'
+            service.value = 'Показать все'
+            click.classList.remove('click')
         }
     }
     for(let b = 0; b < contentVis.length; b++){

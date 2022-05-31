@@ -117,8 +117,3 @@ body {
     font-size: 16px;
     padding:0 8px 0 0;
 }
-@media screen and (min-width: 1430px) and (max-width: 1440px) {
-    .header-burger__menu > .btn{
-        display: none;
-    }
-}

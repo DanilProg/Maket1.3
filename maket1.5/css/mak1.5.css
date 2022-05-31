@@ -54,11 +54,16 @@ h2{
 .service-hide__btn{
     display: flex;
     margin-left: 12px;
-    position: relative;
 }
 .service-hide::before{
+    content: url("../img/downStrela.svg");
+    position: absolute;
+    left: 25px;
+}
+.service-hide.click::before{
     content: url("../img/strelka.svg");
     position: absolute;
+    left: 25px;
 }
 input{
     padding: 0;
@@ -106,7 +111,4 @@ input:focus{
     }
 
 }
-.service-hide{
-    display: grid;
-    tex
-}
+
